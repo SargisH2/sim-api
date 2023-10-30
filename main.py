@@ -17,7 +17,7 @@ import pickle
 with open('extractor.pkl', 'rb') as f:
     extractor =  pickle.load(f)
 
-# model_ckpt = "google/vit-base-patch16-224"
+model_ckpt = "google/vit-base-patch16-224"
 # extractor = AutoFeatureExtractor.from_pretrained(model_ckpt)
 model = AutoModel.from_pretrained(model_ckpt)
 hidden_dim = model.config.hidden_size
